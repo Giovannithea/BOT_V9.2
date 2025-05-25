@@ -19,7 +19,7 @@ class Sniper {
 
         // Wallet Setup
         this.owner = Keypair.fromSecretKey(
-            bs58.decode(process.env.WALLET_PRIVATE_KEY)
+            bs58.default.decode(process.env.WALLET_PRIVATE_KEY)
         );
 
         // Connection
